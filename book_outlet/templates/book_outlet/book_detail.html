@@ -1,7 +1,20 @@
 {% extends 'book_outlet/base.html' %}
+{% load static %}
 
 {% block title %}
     {{ title }}
+{% endblock %}
+
+{% block css_file %}
+    <link rel="stylesheet" href="{% static "book_outlet/basic.css" %}" >
+{% endblock %}
+
+{% block navigation %}
+    <nav>
+        <img class="img1" src="{% static "book_outlet/image/flower.png" %}" alt="front" />
+        <a href = "{% url "index" %}">Book Store</a>
+        <img class="img2" src="{% static "book_outlet/image/flower.png" %}" alt="back" />
+    </nav>
 {% endblock %}
 
 {% block content %}

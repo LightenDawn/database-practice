@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+
+html {
+    font-family: 'Palette Mosaic', cursive;
+}
+
+body {
+    height: 10rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 10rem;
+    display: flex;
+}
+ul li {
+    text-align: center;
+    font-size: 1rem;
+    color:rgb(247, 0, 255);
+    flex-grow: 1;
+    border: 1px solid white;
+    line-height: 10rem;
+    border-radius: 14px;
+    background-color: rgb(66, 66, 66);
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(247, 0, 255);
+}
+
+li:hover,
+li:active {
+    background-color: rgb(255, 238, 89);
+    transition: all 1s ease;
+}
+
+.hr-double {
+    border: 0;
+    border-top: 5px double #d0d0d5;
+}
+
+p {
+    font-weight: 900;
+    font-size: 2rem;
+    color:rgb(48, 48, 48);
+    font-style: oblique;
+}
+
+h1 {
+    font-size: 3rem;
+    background-color: rgb(245, 178, 230);
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    border-radius: 14px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    width: 22%;
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex;
+}
+
+nav a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 3rem;
+    background-color: plum;
+    color:black;
+    width: 50%;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: rgb(202, 202, 202);
+    transition: all 0.5s ease;
+    color: darksalmon;
+}
+
+nav img.img1 {
+    width: 10rem;
+    height: 5rem;
+    position: absolute;
+    top: 0px;
+    left: 12.5%;
+    object-fit: cover;
+    border-radius: 14px;
+    background-color: rgb(170, 170, 255);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+nav img.img2 {
+    width: 10rem;
+    height: 5rem;
+    position: absolute;
+    top: 0px;
+    right: 12.5%;
+    object-fit: cover;
+    border-radius: 14px;
+    background-color: rgb(170, 170, 255);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}

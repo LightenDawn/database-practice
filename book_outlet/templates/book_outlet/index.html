@@ -1,7 +1,12 @@
 {% extends 'book_outlet/base.html' %}
+{% load static %}
 
 {% block title %}
     All Books
+{% endblock %}
+
+{% block css_file %}
+    <link rel="stylesheet" href="{% static "book_outlet/basic.css" %}">
 {% endblock %}
 
 {% block content %}
@@ -11,7 +16,7 @@
         {% endfor %}
     </ul>
 
-    <hr>
+    <hr class="hr-double">
     
     <p>Total number of the books: {{ total_number_of_book }}</p>
     <p>Average rating: {{ average_rating.rating__avg }}</p>
